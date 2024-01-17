@@ -36,8 +36,9 @@ The Babble website incorporates the following API endpoints and functionalities:
   - `POST /api/Chats/:id/Messages`: Send a message in a specific chat.
   - `GET /api/Chats/:id/Messages/FilesAttach`: Retrieve all file attachments from a specific chat.
   - `GET /api/Chats/Messages/FilesAttach/:msgId`: Retrieve the data of the file attached to a specific message.
-<br>
+    
 ## Notes about Real-Time chatting.
+
 In this project, we have chosen to store the user's information in the localStorage of the browser. This decision was made to ensure that users do not get logged out when they refresh the page or reopen the browser. By utilizing localStorage, we provide a seamless experience where users can continue their session without interruption.
 
 However, it is important to note that localStorage is shared across all tabs within the same browser. While this approach enables persistence, it poses a limitation for experiencing real-time chatting. To fully utilize the real-time chatting functionality, it is required to connect to multiple users using different browsers, or opening a single incognito tab alongside a single regular tab.
